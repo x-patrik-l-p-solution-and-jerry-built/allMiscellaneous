@@ -1,0 +1,16 @@
+EN-US,PT-BR,EXPLICACAO
+des,DESIGNACAO,Identificador primário do objeto (asteroide ou cometa)
+orbit_id,ID_ORBITA,ID da órbita usada no cálculo da aproximação
+jd,JD,Data juliana do evento (tempo da aproximação)
+cd,DATA_CALENDARIO,Data e hora da aproximação em formato legível
+dist,DISTANCIA_NOMINAL_UA,Distância de aproximação nominal (em UA – unidades astronômicas)
+dist_min,DISTANCIA_MINIMA_UA,"Menor distância estimada (limite inferior, 3-sigma)"
+dist_max,DISTANCIA_MAXIMA_UA,"Maior distância estimada (limite superior, 3-sigma)"
+v_rel,VELOCIDADE_RELATIVA_KMS,Velocidade relativa ao corpo de aproximação (em km/s)
+v_inf,VELOCIDADE_INFINITA_KMS,Velocidade relativa a um corpo sem massa (em km/s)
+t_sigma_f,INCERTEZA_TEMPO,Incerteza na hora da aproximação (em dias/horas:minutos)
+body,CORPO_ALVO,"Corpo celeste próximo à aproximação (ex: Terra, Vênus)"
+h,MAGNITUDE_ABSOLUTA_H,Brilho absoluto do objeto (H)
+diameter,DIAMETRO_KM,Diâmetro estimado do objeto (em km)
+diameter_sigma,INCERTEZA_DIAMETRO_KM,Incerteza na estimativa de diâmetro (em km)
+fullname,NOME_COMPLETO,Nome completo ou designação do objeto
