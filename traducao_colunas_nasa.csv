@@ -1,16 +1,16 @@
 EN-US,PT-BR,EXPLICACAO
-des,DESIGNACAO,Identificador primário do objeto (asteroide ou cometa)
-orbit_id,ID_ORBITA,ID da órbita usada no cálculo da aproximação
-jd,JD,Data juliana do evento (tempo da aproximação)
-cd,DATA_CALENDARIO,Data e hora da aproximação em formato legível
-dist,DISTANCIA_NOMINAL_UA,Distância de aproximação nominal (em UA – unidades astronômicas)
-dist_min,DISTANCIA_MINIMA_UA,"Menor distância estimada (limite inferior, 3-sigma)"
-dist_max,DISTANCIA_MAXIMA_UA,"Maior distância estimada (limite superior, 3-sigma)"
-v_rel,VELOCIDADE_RELATIVA_KMS,Velocidade relativa ao corpo de aproximação (em km/s)
-v_inf,VELOCIDADE_INFINITA_KMS,Velocidade relativa a um corpo sem massa (em km/s)
-t_sigma_f,INCERTEZA_TEMPO,Incerteza na hora da aproximação (em dias/horas:minutos)
-body,CORPO_ALVO,"Corpo celeste próximo à aproximação (ex: Terra, Vênus)"
-h,MAGNITUDE_ABSOLUTA_H,Brilho absoluto do objeto (H)
-diameter,DIAMETRO_KM,Diâmetro estimado do objeto (em km)
-diameter_sigma,INCERTEZA_DIAMETRO_KM,Incerteza na estimativa de diâmetro (em km)
-fullname,NOME_COMPLETO,Nome completo ou designação do objeto
+des,DESIGNACAO_PRIMARIA,"Designação primária do asteroide/cometa (ex: 433, 2000 SG344) - sempre presente"
+orbit_id,ID_ORBITA,"ID único da órbita usada nos cálculos de aproximação"
+jd,DATA_JULIANA,"Tempo da aproximação em Data Juliana (Tempo Dinâmico Bariocêntrico - TDB)"
+cd,DATA_FORMATADA,"Data/hora da aproximação em formato calendário (TDB)"
+dist,DISTANCIA_NOMINAL_UA,"Distância nominal de aproximação em Unidades Astronômicas (1 UA = ~149.6 milhões de km)"
+dist_min,DISTANCIA_MINIMA_UA,"Distância mínima (limite inferior 3-sigma) em UA - 99.7% de confiança"
+dist_max,DISTANCIA_MAXIMA_UA,"Distância máxima (limite superior 3-sigma) em UA - 99.7% de confiança"
+v_rel,VELOCIDADE_RELATIVA_KMS,"Velocidade relativa ao corpo de aproximação (km/s) - valor instantâneo no momento da aproximação"
+v_inf,VELOCIDADE_INFINITA_KMS,"Velocidade relativa a um corpo sem massa (km/s) - velocidade 'no infinito'"
+t_sigma_f,INCERTEZA_TEMPO,"Incerteza 3-sigma no horário (formato: dias_horas:minutos, ex: '2_09:08' = 2d 9h 8min)"
+body,CORPO_ALVO,"Corpo de aproximação (ex: Terra, Marte) - exibido apenas se body=ALL na consulta"
+h,MAGNITUDE_ABSOLUTA,"Magnitude absoluta (H) - brilho intrínseco do objeto"
+diameter,DIAMETRO_KM,"Diâmetro estimado (km) - opcional (requer parâmetro diameter=true), null se desconhecido"
+diameter_sigma,INCERTEZA_DIAMETRO_KM,"Incerteza 1-sigma no diâmetro (km) - opcional, null se desconhecido"
+fullname,NOME_COMPLETO,"Nome completo formatado (com espaços para alinhamento) - opcional (requer fullname=true)"
