@@ -1,16 +1,21 @@
 EN-US,PT-BR,EXPLICACAO
-des,DESIGNACAO,Identificador primário do objeto (asteroide ou cometa)
-orbit_id,ID_ORBITA,ID da órbita usada no cálculo da aproximação
-jd,JD,Data juliana do evento (tempo da aproximação)
-cd,DATA_CALENDARIO,Data e hora da aproximação em formato legível
-dist,DISTANCIA_NOMINAL_UA,Distância de aproximação nominal (em UA – unidades astronômicas)
-dist_min,DISTANCIA_MINIMA_UA,"Menor distância estimada (limite inferior, 3-sigma)"
-dist_max,DISTANCIA_MAXIMA_UA,"Maior distância estimada (limite superior, 3-sigma)"
-v_rel,VELOCIDADE_RELATIVA_KMS,Velocidade relativa ao corpo de aproximação (em km/s)
-v_inf,VELOCIDADE_INFINITA_KMS,Velocidade relativa a um corpo sem massa (em km/s)
-t_sigma_f,INCERTEZA_TEMPO,Incerteza na hora da aproximação (em dias/horas:minutos)
-body,CORPO_ALVO,"Corpo celeste próximo à aproximação (ex: Terra, Vênus)"
-h,MAGNITUDE_ABSOLUTA_H,Brilho absoluto do objeto (H)
-diameter,DIAMETRO_KM,Diâmetro estimado do objeto (em km)
-diameter_sigma,INCERTEZA_DIAMETRO_KM,Incerteza na estimativa de diâmetro (em km)
-fullname,NOME_COMPLETO,Nome completo ou designação do objeto
+des,DESIGNACAO_PRIMARIA,Identificador primário do asteroide ou cometa (ex: 433, 2000 SG344)
+orbit_id,ID_ORBITA,ID da órbita usada no cálculo da aproximação (ex: 174, 206)
+jd,DATA_JULIANA,Data Juliana do momento da aproximação (Tempo Dinâmico Bariocêntrico - TDB)
+cd,DATA_FORMATADA,Data e hora da aproximação em formato legível (TDB)
+dist,DISTANCIA_NOMINAL_UA,Distância nominal de aproximação em Unidades Astronômicas
+dist_min,DISTANCIA_MINIMA_UA,Menor distância possível (limite inferior 3-sigma) em UA
+dist_max,DISTANCIA_MAXIMA_UA,Maior distância possível (limite superior 3-sigma) em UA
+v_rel,VELOCIDADE_RELATIVA_KMS,Velocidade relativa ao corpo de aproximação (km/s)
+v_inf,VELOCIDADE_INFINITA_KMS,Velocidade relativa a um corpo sem massa (km/s)
+t_sigma_f,INCERTEZA_TEMPO,Incerteza no horário da aproximação (formato: dias_horas:minutos)
+body,CORPO_ALVO,Corpo celeste da aproximação (ex: Earth, Mars, Moon)
+h,MAGNITUDE_ABSOLUTA,Magnitude absoluta do objeto (H)
+diameter,DIAMETRO_KM,Diâmetro estimado do objeto em quilômetros (quando disponível)
+diameter_sigma,INCERTEZA_DIAMETRO_KM,Incerteza no diâmetro estimado em km (quando disponível)
+fullname,NOME_COMPLETO,Nome completo/designação formatada do objeto
+spk,SPK_ID,Identificador SPK do objeto (ex: 2000433)
+class,CLASSE_ORBITAL,Classificação orbital (ex: ATE, APO, AMO, COM)
+pha,PHA_FLAG,Indica se é um Asteroide Potencialmente Perigoso (true/false)
+neo,NEO_FLAG,Indica se é um Objeto Próximo da Terra (true/false)
+comet,COMETA_FLAG,Indica se é um cometa (true/false)
